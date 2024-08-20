@@ -2,6 +2,7 @@
 
 *{
     font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
 }
 
 .nav-item, .fz-14{
@@ -125,13 +126,12 @@ main{
 
   @media (max-width: 768px) {
     .card {
-      max-width: 80% !important;
+      width: 80% !important;
       padding: 0 10px;
       margin-bottom: 10px;
     }
 
     .product {
-        max-width: 100%;
         margin: 0 auto; /* Ensure the card takes full width */
       }
 
