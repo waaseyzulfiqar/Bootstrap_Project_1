@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@300..700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-item, .fz-14{
+    font-size: 14px;
+}
+
+.fz-12{
+    font-size: 12px;
+}
+
+.fz-18{
+    font-size: 18px;
+}
+
+.fz-20{
+    font-size: 20px;
+}
+
+a.active:hover{
+    color: red !important;
+}
+
+a.active {
+    position: relative;
+    text-decoration: none;
+  }
+  
+  a.active::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: -3px;
+    background-color: red;
+    transition: width 0.6s ease-in-out;
+}
+
+a.active:hover::after {
+    width: 100%;
+  }
+  
+
+.nav-link{
+    margin-right: 42px;
+}
+
+main{
+    background: linear-gradient(135deg, #FDF7F2 0%, #FEE9D9 100%);
+}
+
+.card{
+    border: none;
+    height: 16rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.card-img{
+    width: fit-content;
+}
+.card-img img{
+    width: 70px;
+}
+
+.cards{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    height: 7rem;
+}
+
+.bg{
+    background: linear-gradient(241deg, rgba(255,238,212,1) 35%, rgba(255,255,255,1) 100%);
+}
+
+.border-radius{
+    border-bottom-left-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+}
+
+
+.links a{
+    display: block;
+    text-decoration: none;
+    font-size: 15px;
+    color: #827d7d;
+    line-height: 2.2rem;
+}
+
+.links a:hover{
+    color: black;
+}
+
+.text-center a{
+    text-decoration: none;
+    font-size: 15px;
+    margin-left: 30px;
+    color: #242222;
+}
+
+.width{
+    width: 35px;
+}
+
+  
+@media (max-width: 576px) {
+    
+  
+    .trying {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; /* Stack items vertically */
+    }
+  }
+  
+
+@media (min-width: 767px) and (max-width: 991px) {
+    .card {
+      max-width: 50rem !important;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .card {
+      max-width: 80% !important;
+      padding: 0 10px;
+      margin-bottom: 10px;
+    }
+
+    .product {
+        max-width: 100%;
+        margin: 0 auto; /* Ensure the card takes full width */
+      }
+
+    
+}
+
+@media (max-width: 991px) {
+    
+    .flex-reverse{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 30px;
+
+    }
+  }
