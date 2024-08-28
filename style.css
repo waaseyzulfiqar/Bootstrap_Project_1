@@ -12,6 +12,15 @@ html {
   font-size: 1.4rem; /* converted from 14px */
 }
 
+.nav-icon{
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.custom-width{
+    width: 60%;
+}
+
 .fz-12 {
   font-size: 1.2rem; /* converted from 12px */
 }
@@ -71,7 +80,7 @@ main {
 
 .cards {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  height: 7rem;
+  /* height: 7rem; */
 }
 
 .bg {
@@ -90,9 +99,14 @@ main {
 .links a {
   display: block;
   text-decoration: none;
-  font-size: 1.5rem; /* converted from 15px */
+  font-size: 1.4rem; /* converted from 15px */
   color: #827d7d;
   line-height: 2.2rem;
+}
+
+.footer h6{
+    font-size: 1.6rem;
+    font-weight: 600;
 }
 
 .links a:hover {
@@ -108,6 +122,21 @@ main {
 
 .width {
   width: 35px;
+}
+
+@media (max-width: 1024px) {
+    .new{
+        width: 2.7rem;
+    }
+
+    .arrow{
+        width: 1.5rem;
+    }
+
+    .custom-width{
+        width: 55%;
+    }
+    
 }
 
 
