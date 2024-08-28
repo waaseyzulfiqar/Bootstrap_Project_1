@@ -1,149 +1,155 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@300..700&display=swap');
-
-*{
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
+html {
+  font-size: 62.5%; /* base font size */
 }
 
-.nav-item, .fz-14{
-    font-size: 14px;
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
 }
 
-.fz-12{
-    font-size: 12px;
+.nav-item,
+.fz-14 {
+  font-size: 1.4rem; /* converted from 14px */
 }
 
-.fz-18{
-    font-size: 18px;
+.fz-12 {
+  font-size: 1.2rem; /* converted from 12px */
 }
 
-.fz-20{
-    font-size: 20px;
+.fz-18 {
+  font-size: 1.8rem; /* converted from 18px */
 }
 
-a.active:hover{
-    color: red !important;
+.fz-20 {
+  font-size: 2rem; /* converted from 20px */
+}
+
+a.active:hover {
+  color: red !important;
 }
 
 a.active {
-    position: relative;
-    text-decoration: none;
-  }
-  
-  a.active::after {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 2px;
-    left: 0;
-    bottom: -3px;
-    background-color: red;
-    transition: width 0.6s ease-in-out;
+  position: relative;
+  text-decoration: none;
+}
+
+a.active::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: -3px;
+  background-color: red;
+  transition: width 0.6s ease-in-out;
 }
 
 a.active:hover::after {
-    width: 100%;
+  width: 100%;
+}
+
+.nav-link {
+  margin-right: 42px;
+}
+
+main {
+  background: linear-gradient(135deg, #fdf7f2 0%, #fee9d9 100%);
+}
+
+.card {
+  border: none;
+  height: 22rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.card-img {
+  width: fit-content;
+}
+.card-img img {
+  width: 70px;
+}
+
+.cards {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  height: 7rem;
+}
+
+.bg {
+  background: linear-gradient(
+    241deg,
+    rgba(255, 238, 212, 1) 35%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+.border-radius {
+  border-bottom-left-radius: 10px !important;
+  border-bottom-right-radius: 10px !important;
+}
+
+.links a {
+  display: block;
+  text-decoration: none;
+  font-size: 1.5rem; /* converted from 15px */
+  color: #827d7d;
+  line-height: 2.2rem;
+}
+
+.links a:hover {
+  color: black;
+}
+
+.text-center a {
+  text-decoration: none;
+  font-size: 1.5rem; /* converted from 15px */
+  margin-left: 30px;
+  color: #242222;
+}
+
+.width {
+  width: 35px;
+}
+
+
+@media (max-width: 768px) {
+  
+  .card {
+    width: 80% !important;
+    padding: 0 10px;
+    margin-bottom: 10px;
   }
-  
 
-.nav-link{
-    margin-right: 42px;
+  .product {
+    margin: 0 auto; /* Ensure the card takes full width */
+  }
 }
 
-main{
-    background: linear-gradient(135deg, #FDF7F2 0%, #FEE9D9 100%);
-}
-
-.card{
-    border: none;
-    height: 16rem;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
-
-.card-img{
-    width: fit-content;
-}
-.card-img img{
-    width: 70px;
-}
-
-.cards{
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    height: 7rem;
-}
-
-.bg{
-    background: linear-gradient(241deg, rgba(255,238,212,1) 35%, rgba(255,255,255,1) 100%);
-}
-
-.border-radius{
-    border-bottom-left-radius: 10px !important;
-    border-bottom-right-radius: 10px !important;
-}
-
-
-.links a{
-    display: block;
-    text-decoration: none;
-    font-size: 15px;
-    color: #827d7d;
-    line-height: 2.2rem;
-}
-
-.links a:hover{
-    color: black;
-}
-
-.text-center a{
-    text-decoration: none;
-    font-size: 15px;
-    margin-left: 30px;
-    color: #242222;
-}
-
-.width{
-    width: 35px;
-}
-
-  
 @media (max-width: 576px) {
-    
-  
-    .trying {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column; /* Stack items vertically */
-    }
+  html {
+    font-size: 58%; /* decreased font size */
   }
-  
-
-@media (min-width: 767px) and (max-width: 991px) {
-    .card {
-      max-width: 50rem !important;
-    }
+  .trying {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Stack items vertically */
   }
-
-  @media (max-width: 768px) {
-    .card {
-      width: 80% !important;
-      padding: 0 10px;
-      margin-bottom: 10px;
-    }
-
-    .product {
-        margin: 0 auto; /* Ensure the card takes full width */
-      }
-
-    
 }
 
-@media (max-width: 991px) {
-    
-    .flex-reverse{
-        display: flex;
-        flex-direction: column-reverse;
-        gap: 30px;
-
-    }
+@media (max-width: 480px) {
+  html {
+    font-size: 52%; /* decreased font size */
   }
+}
+
+@media (max-width: 400px) {
+  html {
+    font-size: 47%; /* decreased font size */
+  }
+}
+
+@media (max-width: 320px) {
+  html {
+    font-size: 40%; /* decreased font size */
+  }
+}
